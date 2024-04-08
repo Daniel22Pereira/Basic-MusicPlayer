@@ -1,0 +1,165 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* playlist */
+
+.menu {
+    font-size: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+/*  */
+
+
+/* image */
+img {
+    width: 300px;
+    height: 300px;
+}
+
+/*  */
+
+
+/* song name and artist */
+h2 {
+    margin-bottom: 5px;
+}
+
+.description {
+    width: 300px;
+}
+
+/*  */
+
+
+/* music bar and time */
+.duration {
+    width: 300px;
+    margin-top: 25px;
+}
+
+.bar {
+    width: 300px;
+    height: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 300px;
+    background-color: #333;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.time {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+/*  */
+
+
+/* player buttons */
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftButtons {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.rightButtons {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+.button-play,
+.button-pause {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.button-shuffle,
+.button-repeat {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.button-pause {
+    display: none;
+}
+
+/*  */
+
+
+/* volume */
+.soundZone {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: min-content;
+}
+
+.soundIcon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.soundLow {
+    display: none;
+}
+
+.soundMute {
+    display: none;
+}
+
+/*  */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0dda6e188.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <i class="fa-solid fa-bars menu"></i>
+        <p>Now playing</p>
+    </div>
+
+    <img src="imagens/Giorno.jpg">
+    
+    <div class="description">
+        <h2>Song Name</h2>
+        <i>Antonio</i>
+    </div>
+
+    <div class="duration">
+        <div class="bar">
+            <progress class="progressBar" value="0" max="1"></progress>
+            <div class="dot"></div>
+        </div>
+        <div class="time">
+            <p class="start">0:00</p>
+            <p class="end">4:20</p>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="leftButtons">
+            <i class="fas fa-play-circle button-play"></i>
+            <i class="fas fa-pause-circle button-pause"></i>
+            <i class="fas fa-step-backward arrow previous"></i>
+            <i class="fas fa-step-forward arrow next"></i>
+        </div>
+
+        <div class="rightButtons">
+            <i class="fa-solid fa-repeat button-repeat"></i>
+            <i class="fa-solid fa-shuffle button-shuffle"></i>
+        </div>
+    </div>
+
+    <div class="soundZone">
+        <i class="fa-solid fa-volume-mute soundIcon soundMute"></i>
+        <i class="fa-solid fa-volume-low soundIcon soundLow"></i>
+        <i class="fa-solid fa-volume-high soundIcon soundHigh"></i>
+        <input type="range" min="0" max="100" value="100" class="volumeSlider">
+    </div>
+
+    <audio src="songs/Giorno Theme.mp3"></audio>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
